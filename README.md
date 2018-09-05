@@ -1,2 +1,2 @@
-# edt
+# EDT
 EDT tasks and findings

@@ -142,6 +142,20 @@ kube-system     replicaset.apps/jxing-nginx-ingress-default-backend-84f46c65d6  
 kube-system     replicaset.apps/tiller-deploy-895d57dd9     
 ```
 
+Getting further details on services
+
+```
+kirill@Azure:~$ kubectl get service -n kube-system  -owide
+NAME                                                  TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)                      AGE       SELECTOR
+addon-http-application-routing-default-http-backend   ClusterIP      10.0.152.84    <none>        80/TCP                       67d       app=addon-http-application-routing-default-http-backend
+addon-http-application-routing-nginx-ingress          LoadBalancer   10.0.187.108   <pending>     80:32044/TCP,443:32765/TCP   67d       app=addon-http-application-routing-nginx-ingress
+heapster                                              ClusterIP      10.0.64.118    <none>        80/TCP                       67d       k8s-app=heapster
+jxing-nginx-ingress-controller                        LoadBalancer   10.0.2.40      <pending>     80:31836/TCP,443:32294/TCP   17h       app=nginx-ingress,component=controller,release=jxing
+jxing-nginx-ingress-default-backend                   ClusterIP      10.0.82.23     <none>        80/TCP                       17h       app=nginx-ingress,component=default-backend,release=jxing
+kube-dns                                              ClusterIP      10.0.0.10      <none>        53/UDP,53/TCP                67d       k8s-app=kube-dns
+kubernetes-dashboard                                  ClusterIP      10.0.59.115    <none>        80/TCP                       67d       k8s-app=kubernetes-dashboard
+tiller-deploy                                         ClusterIP      10.0.31.147    <none>        44134/TCP                    17h       app=helm,name=tiller
+```
 
 ### Jenkins X Environments
 

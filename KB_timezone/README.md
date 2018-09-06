@@ -9,7 +9,7 @@ Open the Operation Center and configure the questioned managed master. In the Sy
 
 ![](timezone1.png)
 
-Verify that the timezone settings on **Manage Jenkins > System Information** page
+Open **Manage Jenkins > System Information** page and verify the timezone value.
 
 ![](timezone2.png)
 

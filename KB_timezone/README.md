@@ -1,0 +1,17 @@
+# Change timezone on a CJE Managed Master
+
+We have a CJE environment and I am getting complaints from my customers that their build times are not accurate. My Servers are on the west coast and most of my customers are on the east coast. I am wondering if I can set the time zone per master to be CST, EST, etc. Or what my options are?
+
+
+## Managed Master timezone
+
+Open the Operation Center and configure the questioned managed master.
+In the System Properties box add the requested timezone, e.g. `user.timezone=America/Phoenix`
+
+
+![](timezone1.png)
+
+Verify the timezone settings on **Manage Jenkins > System Information** page
+
+![](timezone2.png)
+

@@ -1,4 +1,4 @@
-# Jenkins X
+# Jenkins X experience
 
 Jenkins X is a platform that allows developers shifting from the mode: **_It does not even work in Kubernetes..._**
 
@@ -186,7 +186,7 @@ jx get app
 When a PR is created, display one or many Preview Environments with
 
 ```
-jx get priview
+jx get preview
 ```
 
 To look at a Jenkins console

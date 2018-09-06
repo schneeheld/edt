@@ -26,7 +26,7 @@ James is very clear in his suggestion to pick one of the three public cloud prov
 
 <p style="text-align: center;"> <b>Do not use mini-kube!</b> </p>
 
-Next demo is about a creating Jenkins X cluster on Google cloud
+Short and informative demo about creating Jenkins X cluster on the Google cloud
 
 [jx create cluster on GKE](https://www.youtube.com/watch?v=r8-J9Qg-p9U)
 
@@ -120,6 +120,28 @@ Changing to `jx` namespace, and validating
 kubectl config set-context $(kubectl config current-context) --namespace=jx
 kubectl config view | grep namespace:
 ```
+
+The following resources were created during `jx install` process
+
+```
+kirill@Azure:~$ k get all --all-namespaces
+kube-system     pod/jxing-nginx-ingress-controller-57d7df8549-nxrjc                   1/1       Running            0          17h
+kube-system     pod/jxing-nginx-ingress-default-backend-84f46c65d6-svj9l              1/1       Running            0          17h
+kube-system     pod/tiller-deploy-895d57dd9-jjgk2                                     1/1       Running            0          17h
+
+kube-system     service/jxing-nginx-ingress-controller                        LoadBalancer   10.0.2.40      <pending>     80:31836/TCP,443:32294/TCP   17h
+kube-system     service/jxing-nginx-ingress-default-backend                   ClusterIP      10.0.82.23     <none>        80/TCP                       17h
+kube-system     service/tiller-deploy                                         ClusterIP      10.0.31.147    <none>        44134/TCP                    17h
+
+kube-system     deployment.apps/jxing-nginx-ingress-controller                            1         1         1            1           17h
+kube-system     deployment.apps/jxing-nginx-ingress-default-backend                       1         1         1            1           17h
+kube-system     deployment.apps/tiller-deploy                                             1         1         1            1           17h
+
+kube-system     replicaset.apps/jxing-nginx-ingress-controller-57d7df8549                 1         1         1         17h
+kube-system     replicaset.apps/jxing-nginx-ingress-default-backend-84f46c65d6            1         1         1         17h
+kube-system     replicaset.apps/tiller-deploy-895d57dd9     
+```
+
 
 ### Jenkins X Environments
 

@@ -8,10 +8,11 @@ We have a CJE environment and I am getting complaints from my customers that the
 Open the Operation Center and configure the questioned managed master.
 In the System Properties box add the requested timezone, e.g. `user.timezone=America/Phoenix`
 
+You need to restart the managed master for the change to take effect.
 
 ![](timezone1.png)
 
-Verify the timezone settings on **Manage Jenkins > System Information** page
+Verify that the timezone settings on **Manage Jenkins > System Information** page
 
 ![](timezone2.png)
 

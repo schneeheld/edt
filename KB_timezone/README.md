@@ -5,10 +5,7 @@ We have a CJE environment and I am getting complaints from my customers that the
 
 ## Managed Master timezone
 
-Open the Operation Center and configure the questioned managed master.
-In the System Properties box add the requested timezone, e.g. `user.timezone=America/Phoenix`
-
-You need to restart the managed master for the change to take effect.
+Open the Operation Center and configure the questioned managed master. In the System Properties box add the requested timezone, e.g. `user.timezone=America/Phoenix`. You need to restart the managed master for the change to take effect.
 
 ![](timezone1.png)
 

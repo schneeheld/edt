@@ -53,3 +53,6 @@ Then follow the **Allocate node : Start** link to get to the workspace. Any user
 ![](secrets_C.png)
 
 
+References:
+
+[How to manage sensitive credentials?](https://support.cloudbees.com/hc/en-us/articles/115002880172-How-to-manage-sensitive-credentials-)

@@ -1,4 +1,4 @@
-# How to backup CJE 1.x managed masters to local directory
+# How to backup CJE managed masters to local directory
 
 The backup plugin simplifies the execution and the administration of backups. Backing up CloudBees Jenkins Enterprise is important for several reasons; for a disaster recovery such as a disk failure, for retrieving old configuration in case someone accidentally deleted something important, and for auditing for tracing back the origin of a particular configuration. Use **CJOC > New > Cluster Operations** job to perform a backup of connected Managed Masters.
 
